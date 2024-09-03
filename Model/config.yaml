@@ -29,5 +29,5 @@ checkpoint:
   load_dir_checkpoint: None
   save_frequency: 1
 system:
-  log_dir_system: /save/single_cube
-  data_root: /data
+  log_dir_system: C:\Users\1213123\Unity\My project (1)\Models
+  data_root: C:\Users\1213123\Unity\My project (1)\Training

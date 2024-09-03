@@ -128,7 +128,7 @@ class SingleCubeDataset(torch.utils.data.IterableDataset):
             (int): length of the dataset
         """
         for folder in os.listdir(self.root):
-            if folder.startswith("RGB"):
+            if folder.startswith("sequence"):
                 return len(os.listdir(os.path.join(self.root, folder)))
 
     def _sample(self, iterator):
@@ -226,7 +226,7 @@ class RawDataIterator:
         self.image_index = 0
         self.base_path = path
         for file in os.listdir(path):
-            if file.startswith("Dataset"):
+            if file.startswith("sequence"):
                 self.log_folder_path = os.path.join(path, file)
 
     def __iter__(self):

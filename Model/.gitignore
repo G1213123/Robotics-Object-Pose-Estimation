@@ -15,6 +15,7 @@ runs/
 *.egg-info/
 .coverage
 *.tar.gz
+*.tar
 env/
 
 
